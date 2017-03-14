@@ -26,8 +26,8 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 UserDetail userDetail=new UserDetail();
-                userDetail.setFirstName("Owais");
-                userDetail.setLastName("Ur Rehman");
+                userDetail.setFirstName("Robert");
+                userDetail.setLastName("Python");
                 Intent intent=new Intent(HomeActivity.this,DetailActivity.class);
                 Bundle bundle=new  Bundle();
                 bundle.putParcelable("UserDetail",userDetail);
