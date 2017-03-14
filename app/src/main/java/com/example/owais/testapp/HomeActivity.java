@@ -9,18 +9,18 @@ import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
 
-    TextView textViewUserName,textViewPassword;
+    TextView textViewName,textViewPassword;
     Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        textViewUserName= (TextView) findViewById(R.id.textView2);
+        textViewName= (TextView) findViewById(R.id.textView2);
         textViewPassword=(TextView) findViewById(R.id.textView3);
         button= (Button) findViewById(R.id.button1);
         Intent intent=getIntent();
         User user= (User) intent.getSerializableExtra("User");
-        textViewUserName.setText(user.getUserName());
+        textViewName.setText(user.getUserName());
         textViewPassword.setText(user.getPassWord());
         button.setOnClickListener(new View.OnClickListener() {
             @Override
